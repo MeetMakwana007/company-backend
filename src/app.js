@@ -10,12 +10,12 @@ const swaggerDocument = YAML.parse(file);
 
 swaggerDocument.servers = [
   {
-    url: `http://localhost:${process.env.PORT || 5000}/api`,
-    description: "Local server",
+    url: `${process.env.DEPLOYED_URL}/api`,
+    description: "Deployment server",
   },
   {
-    url: `https://${process.env.VERCEL_URL || "vercel-url.vercel.app"}/api`,
-    description: "Vercel deployment server",
+    url: `http://localhost:${process.env.PORT || 5000}/api`,
+    description: "Local server",
   },
 ];
 const userRoutes = require("./routes/userRoutes");

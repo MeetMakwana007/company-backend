@@ -45,7 +45,7 @@ This project is a Node.js application that provides a RESTful API for user authe
 
    ```plaintext
    PORT=5000
-   VERCEL_URL=your-vercel-url.vercel.app
+   DEPLOYED_URL=your-vercel-url.vercel.app
    MONGO_URI=your-mongodb-connection-string
    ```
 
